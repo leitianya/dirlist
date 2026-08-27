@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
 <body>
 <div id="dplayer"></div>
 <script src="<?php echo $cdnpublic?>jquery/3.7.1/jquery.min.js"></script>
-<?php if($ext == 'm3u8'){?><script src="<?php echo $cdnpublic?>hls.js/1.6.13/hls.min.js"></script><?php }?>
+<?php if($ext == 'm3u8'){?><script src="<?php echo $cdnpublic?>hls.js/1.6.14/hls.min.js"></script><?php }?>
 <?php if($ext == 'flv'){?><script src="<?php echo $cdnpublic?>flv.js/1.6.2/flv.min.js"></script><?php }?>
 <script src="<?php echo $cdnpublic?>dplayer/1.27.1/DPlayer.min.js"></script>
 <script type="text/javascript">

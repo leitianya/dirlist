@@ -156,6 +156,18 @@ location ~* /([^/]+\.[^/]+)$ {
 	  <div class="col-sm-9"><select class="form-control" name="page_size" default="<?php echo $conf['page_size']?>"><option value="0">关闭翻页功能</option><option value="30">每页显示30条</option><option value="50">每页显示50条</option><option value="100">每页显示100条</option><option value="200">每页显示200条</option><option value="300">每页显示300条</option></select></div>
 	</div>
 	<div class="form-group row">
+	  <label class="col-sm-3 col-form-label">公共静态资源CDN</label>
+	  <div class="col-sm-9"><select class="form-control" name="cdnpublic" default="<?php echo $conf['cdnpublic']?>"><option value="0">本地</option><option value="1">Web缓存网</option><option value="2">ZstaticCDN</option><option value="3">未闻花名CDN</option></select></div>
+	</div>
+	<div class="form-group row">
+	  <label class="col-sm-3 col-form-label">WebDAV服务</label>
+	  <div class="col-sm-9">
+		<select class="form-control" name="webdav" default="<?php echo isset($conf['webdav'])?$conf['webdav']:'0'?>"><option value="0">关闭</option><option value="1">开启</option></select>
+		<input type="text" class="form-control mt-2" value="<?php echo htmlspecialchars($siteurl.'_dir/webdav.php/'); ?>" readonly onclick="this.select()"/>
+		<font color="green">WebDAV账号密码与后台登录账号密码相同</font>
+	  </div>
+	</div>
+	<div class="form-group row">
 	  <div class="offset-sm-3 col-sm-9"><input type="submit" name="submit" value="修改" class="btn btn-primary form-control"/>
 	  <?php if($conf['cache_indexes']>0){?>
 <hr/><button type="button" class="btn btn-warning btn-block" onclick="clearIndexes()"><i class="fa fa-trash"></i> 清除文件索引缓存</button>

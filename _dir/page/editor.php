@@ -46,9 +46,9 @@ header('Content-Type: text/html; charset=UTF-8');
 </form>
 <script src="<?php echo $cdnpublic?>jquery/3.7.1/jquery.min.js"></script>
 <script src="<?php echo $cdnpublic?>layer/3.1.1/layer.js"></script>
-<script src="<?php echo $cdnpublic?>ace/1.43.3/ace.js"></script>
-<script src="<?php echo $cdnpublic?>ace/1.43.3/ext-language_tools.js"></script>
-<script src="<?php echo $cdnpublic?>ace/1.43.3/ext-modelist.js"></script>
+<script src="<?php echo $cdnpublic2?>ace/1.43.3/ace.js"></script>
+<script src="<?php echo $cdnpublic2?>ace/1.43.3/ext-language_tools.js"></script>
+<script src="<?php echo $cdnpublic2?>ace/1.43.3/ext-modelist.js"></script>
 <script type="text/javascript">
 ace.require("ace/ext/language_tools");
 editor = ace.edit("file_content");

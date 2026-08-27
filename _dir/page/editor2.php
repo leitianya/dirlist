@@ -48,11 +48,12 @@ header('Content-Type: text/html; charset=UTF-8');
 </form>
 <script src="<?php echo $cdnpublic?>jquery/3.7.1/jquery.min.js"></script>
 <script src="<?php echo $cdnpublic?>layer/3.1.1/layer.js"></script>
-<script src="<?php echo $cdnpublic?>monaco-editor/0.53.0/min/vs/loader.min.js"></script>
+<script src="<?php echo $cdnpublic2?>monaco-editor/0.56.0/min/vs/nls/lang/zh-cn.js"></script>
+<script src="<?php echo $cdnpublic2?>monaco-editor/0.56.0/min/vs/loader.min.js"></script>
 <script type="text/javascript">
 var editor;
 var currentTheme = 'vs-light';
-require.config({ paths: { 'vs': '<?php echo $cdnpublic?>monaco-editor/0.53.0/min/vs' }, 'vs/nls': {availableLanguages: {'*': 'zh-cn'}}});
+require.config({ paths: { 'vs': '<?php echo $cdnpublic2?>monaco-editor/0.56.0/min/vs' }});
 require(['vs/editor/editor.main'], function () {
 
     function getLanguageFromFilename(filename) {

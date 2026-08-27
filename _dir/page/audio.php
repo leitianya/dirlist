@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=UTF-8');
 </head>
 <body>
 <div id="aplayer"></div>
-<?php if($ext == 'm3u8'){?><script src="<?php echo $cdnpublic?>hls.js/1.6.13/hls.min.js"></script><?php }?>
+<?php if($ext == 'm3u8'){?><script src="<?php echo $cdnpublic?>hls.js/1.6.14/hls.min.js"></script><?php }?>
 <script src="<?php echo $cdnpublic?>aplayer/1.10.1/APlayer.min.js"></script>
 <script type="text/javascript">
     var ap = new APlayer({
